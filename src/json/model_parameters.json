@@ -1,0 +1,41 @@
+{
+  "LinearRegression": {
+    "name": "Linear Regression",
+    "parameters": [
+      {
+        "name": "fit_intercept",
+        "type": "boolean",
+        "optional": true,
+        "default": true,
+        "description": "whether to calculate the intercept for this model. If set to False, no intercept will be used in calculations (e.g. data is expected to be already centered)."
+      },
+      {
+        "name": "normalize",
+        "type": "boolean",
+        "optional": true,
+        "default": false,
+        "description": "This parameter is ignored when fit_intercept is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm. If you wish to standardize, please use sklearn.preprocessing.StandardScaler before calling fit on an estimator with normalize=False."
+      },
+      {
+        "name": "copy_X",
+        "type": "boolean",
+        "optional": true,
+        "default": true,
+        "description": "If True, X will be copied; else, it may be overwritten."
+      },
+      {
+        "name": "n_jobs",
+        "type": "int",
+        "optional": true,
+        "default": null,
+        "description": "The number of jobs to use for the computation. This will only provide speedup for n_targets > 1 and sufficient large problems. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details."
+      }
+    ]
+  },
+  "DecisionTreeRegressor": {
+    "name": "Decision Tree Regressor"
+  },
+  "NeuralNetworkRegressor": {
+    "name": "Neural Network Regressor"
+  }
+}

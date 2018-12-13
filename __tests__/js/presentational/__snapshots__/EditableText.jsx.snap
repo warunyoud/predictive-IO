@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<h1
+  className="editable-text"
+>
+  hello 
+  <span
+    className="editable-text-pencil"
+    onClick={[Function]}
+  >
+    <i
+      className="material-icons"
+      style={
+        Object {
+          "color": "gray",
+        }
+      }
+    >
+       edit 
+    </i>
+  </span>
+</h1>
+`;

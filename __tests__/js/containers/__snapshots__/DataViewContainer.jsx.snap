@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <h1>
+    Input a Data
+  </h1>
+  <h2>
+    Adding Files
+  </h2>
+  <div
+    aria-disabled={false}
+    className="dropzone"
+    onClick={[Function]}
+    onDragEnter={[Function]}
+    onDragLeave={[Function]}
+    onDragOver={[Function]}
+    onDragStart={[Function]}
+    onDrop={[Function]}
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "position": "absolute",
+          "textAlign": "center",
+          "top": "35%",
+          "width": "100%",
+        }
+      }
+    >
+      <i
+        className="material-icons dropzone-icon"
+      >
+        file_upload
+      </i>
+      <h2>
+        Drop files here or click to upload.
+      </h2>
+    </div>
+    <input
+      accept=""
+      autoComplete="off"
+      disabled={false}
+      multiple={true}
+      onChange={[Function]}
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "opacity": 0.00001,
+          "pointerEvents": "none",
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="file"
+    />
+  </div>
+</div>
+`;

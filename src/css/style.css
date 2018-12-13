@@ -1,0 +1,266 @@
+:root {
+  --pearlRiver: #D9DDDC;
+  --charCoal: #222021;
+  --anchor: #3E424B;
+  --space: #1C2951;
+  --shark: #2B2F36;
+  --gainsBoro: #DCDCDC;
+  --whiteSmoke: #F5F5F5;
+  --lightGray: #D3D3D3;
+  --slateGray: #708090;
+  --darkSlateGray: #2F4F4F;
+  --dimGray: #696969;
+  --darkGray: #A9A9A9;
+}
+
+* {
+  font-family: Roboto, "Open Sans", sans-serif;
+}
+
+/* SideNavbar */
+.side-navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--shark);
+  overflow-x: hidden;
+  padding-top: 20px;
+  user-select: none;
+}
+
+.side-navbar div {
+  display: flex;
+  color: darkGray;
+  padding: 6px 8px 6px 16px;
+  align-items: center;
+}
+
+.side-navbar div:hover {
+  color: whiteSmoke;
+}
+
+.side-navbar-item-highlighted {
+  background-color: darkSlateGray;
+  color: whiteSmoke !important;
+}
+
+.side-navbar div a {
+  padding-left: 12px;
+  font-size: 12px;
+  font-family: Menlo, Consolas, DejaVu Sans Mono, monospace;
+}
+
+.side-navbar-spinner {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* MainView */
+.main-content {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 200px;
+}
+
+.tab-bar {
+  display: flex;
+  height: 35px;
+  background-color: #d9d9d9;
+  user-select: none;
+}
+
+.tab-item {
+  background-color: #ffffff;
+  width: 225px;
+  line-height: 35px;
+  text-align: center;
+  height: 100%;
+  border-right: 1px solid;
+  border-color: darkGray !important;
+}
+
+.tab_italic {
+  font-style: italic;
+}
+
+.tab-item-unselected {
+  width: 225px;
+  line-height: 35px;
+  text-align: center;
+  height: 100%;
+  border-right: 1px solid;
+  border-color: darkGray !important;
+}
+
+.dropzone {
+  border: 2px dashed ;
+  border-color: darkSlateGray !important;
+  border-radius: 5px;
+  outline-color: darkGray;
+  color: darkGray;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  font-family: Roboto, "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.dropzone div {
+  vertical-align: baseline;
+}
+
+.dropzone-icon {
+  font-size: 80px !important;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border:none;
+  width: 100%;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+/* EditableText */
+.editable-text {
+  font-size: 32px;
+  font-weight: bold;
+  height: 100%;
+  padding: 3px 0px 3px 3px;
+  vertical-align: middle;
+}
+
+.editable-text-pencil {
+  cursor: pointer;
+}
+
+.editable-text-input {
+  font-size: 32px;
+  font-weight: bold;
+  box-shadow: 0 0 5px;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid;
+}
+
+.editable-text-input:focus {
+  font-size: 32px;
+  font-weight: bold;
+  box-shadow: 0 0 5px;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 0px 3px 0px;
+  border: 1px solid;
+}
+
+/* DataVisualizationViewContainer */
+.data-visualization-header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.apply-change-button-container {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.apply-change-button {
+  font-size: 14px;
+  width: 140px;
+  height: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* ModelViewContainer */
+.model-wizard-row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.model-wizard-col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.model-wizard-col-25 label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.model-wizard-col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.model-wizard-col-75 input {
+  width: 100%;
+  font-size: 16px;
+  height: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* */
+.terminal-container {
+  padding: 5px;
+  height: 450px;
+  list-style: none;
+  background: #202020;
+  border-radius: 5px;
+  font: 0.8em 'Andale Mono', Consolas, 'Courier New';
+}
+
+.terminal-container li {
+  color: #FFFFFF;
+  /* color: #45D40C; */
+}

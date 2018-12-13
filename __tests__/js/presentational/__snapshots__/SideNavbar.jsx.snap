@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="side-navbar"
+>
+  <div
+    className={null}
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <i
+      className="material-icons"
+    >
+       
+      storage
+       
+    </i>
+    <a>
+       
+      Dataset
+       
+    </a>
+  </div>
+  <div
+    className={null}
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <i
+      className="material-icons"
+    >
+       
+      layers
+       
+    </i>
+    <a>
+       
+      Train
+       
+    </a>
+  </div>
+  <div
+    className={null}
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <i
+      className="material-icons"
+    >
+       
+      gps_fixed
+       
+    </i>
+    <a>
+       
+      Predict
+       
+    </a>
+  </div>
+  <div
+    className={null}
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <i
+      className="material-icons"
+    >
+       
+      assessment
+       
+    </i>
+    <a>
+       
+      Evaluate
+       
+    </a>
+  </div>
+  <div
+    className={null}
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+  >
+    <i
+      className="material-icons"
+    >
+       
+      code
+       
+    </i>
+    <a>
+       
+      Console
+       
+    </a>
+  </div>
+</div>
+`;
